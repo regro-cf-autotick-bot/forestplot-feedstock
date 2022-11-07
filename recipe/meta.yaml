@@ -1,18 +1,18 @@
 {% set name = "forestplot" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d711f46bd25ad66287763a6d7a795f89acb43e7306feda906d79003563748134
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e824197d3c7f1028b9a0b41461e7f51d304d3ca8ad3033c73eb3a6367d7bf3c5
 
 build:
   number: 0
-  noarch: python  
-  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,13 +29,13 @@ test:
     - forestplot
 
 about:
-  home: "https://github.com/lsys/forestplot"
+  home: https://github.com/lsys/forestplot
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package to make publication-ready but customizable coefficient plots."
-  doc_url: "https://forestplot.rtfd.io/"
-  dev_url: "https://github.com/lsys/forestplot"
+  summary: A Python package to make publication-ready but customizable coefficient plots.
+  doc_url: https://forestplot.rtfd.io/
+  dev_url: https://github.com/lsys/forestplot
 
 extra:
   recipe-maintainers:
