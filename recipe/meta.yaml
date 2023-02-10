@@ -1,5 +1,5 @@
 {% set name = "forestplot" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6828bc5210641515ca9b30243e867c173ebe7b16d77d5fd5cdc59d48328b152e
+  sha256: 9119feb6d1ad64aa58a99e2ffd6d4140b7bda9522bfe656bec670c3df116667e
 
 build:
   number: 0
