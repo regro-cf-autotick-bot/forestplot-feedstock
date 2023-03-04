@@ -1,11 +1,11 @@
-About forestplot
-================
+About forestplot-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/forestplot-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lsys/forestplot
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/forestplot-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python package to make publication-ready but customizable coefficient plots.
 
